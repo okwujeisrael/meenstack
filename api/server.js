@@ -1,10 +1,10 @@
-const express = require ('express'); 
+const express = require('express'); 
 
-const cors = require ('cors'); 
+const cors = require('cors'); 
 
-const app = express (); 
+const app = express(); 
 
-app.use (cors ());
+app.use(cors());
 
 app.get('/api/v1/cats', (request, response) => {
   response.json({
@@ -20,7 +20,7 @@ app.get('/api/v1/cats', (request, response) => {
         },
         relationships: {
           home: {
-          data: { type: 'homes', id: 1 }
+            data: { type: 'homes', id: 1 }
           }
         }
       }
